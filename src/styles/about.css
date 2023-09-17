@@ -1,0 +1,12 @@
+.about{
+    min-height: 40vh;
+    width: 90%;
+    margin: 0  auto;
+}
+
+h3{
+    letter-spacing: 4px;
+    color: rgb(85, 85, 193);
+    text-transform: uppercase
+}
+

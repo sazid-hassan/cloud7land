@@ -10,6 +10,8 @@ import menu from "./Img/menu.svg";
 import person2 from "./Img/person-2.jfif";
 import person3 from "./Img/person-3.jpg";
 import video from "./Img/video.svg";
+import About from "./Pages/About";
+import Services from "./Pages/Services";
 
 function App() {
   // const mobileBtn = document.getElementById("mobile-cta");
@@ -93,6 +95,10 @@ function App() {
       {/* <!--SECTION HERO BLOG END--> */}
 
       {/* <!--SECTION FEATURES BLOG START--> */}
+
+      <About />
+      <Services />
+
       <section class="features-section">
         <div class="container">
           <ul>
