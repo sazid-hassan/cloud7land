@@ -21,6 +21,7 @@ export default function AbooutUsCard() {
     width="100%"
     >
        <Stack
+        className='about'
         borderWidth="1px"
         borderRadius="lg"
         marginTop={4}

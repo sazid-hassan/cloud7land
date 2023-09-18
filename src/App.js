@@ -75,9 +75,9 @@ function App() {
           </div>
         </div>
       </section>
-      <AbooutUsCard/>
+      {/* <AbooutUsCard/> */}
 
-      {/* <About /> */}
+      <About />
       <Services />
       <WorkWith />
 
