@@ -24,6 +24,10 @@ section {
   padding: 5em 2em;
 }
 
+img {
+  max-width: 100%;
+}
+
 /* --- NAVIGATION STYLE ---*/
 .nav-bar {
   background: white;

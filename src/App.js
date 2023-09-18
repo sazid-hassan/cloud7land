@@ -12,6 +12,7 @@ import person3 from "./Img/person-3.jpg";
 import video from "./Img/video.svg";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
+import background from "./Img/background.jpg";
 
 function App() {
   // const mobileBtn = document.getElementById("mobile-cta");
@@ -59,7 +60,7 @@ function App() {
       {/* <!--NAVIGATION BLOG END--> */}
 
       {/* <!--SECTION HERO BLOG START--> */}
-      <section class="hero">
+      {/* <section class="hero">
         <div class="container">
           <div class="left-col">
             <p class="sub-head">it's nitty &amp; gritty</p>
@@ -78,10 +79,18 @@ function App() {
 
           <img src={illustration} alt="Illustration" class="hero-img" />
         </div>
-      </section>
+      </section> */}
       {/* <!--SECTION HERO BLOG END--> */}
 
       {/* <!--SECTION FEATURES BLOG START--> */}
+
+      <section className="">
+        <div className="container" style={{
+          marginTop: "2px"
+        }}>
+          <img src={background} alt="" />
+          </div>
+          </section>
 
       <About />
       <Services />
