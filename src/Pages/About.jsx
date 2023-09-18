@@ -3,7 +3,7 @@ import React from "react";
 const About = () => {
   return (
     <div className="about">
-      <h3>ABOUT US</h3>
+      <h3 className="service-name">ABOUT US</h3>
       <p className="desc">
         Cloud 7 Limited, a pioneer in Bangladesh's digital services and mobile
         payments sector, provides a comprehensive suite of solutions. From
