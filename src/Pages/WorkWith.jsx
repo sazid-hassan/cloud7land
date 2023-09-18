@@ -102,6 +102,22 @@ export default function WorkWith() {
           </Flex>
         </Container>
       </Box>
+
+      <Box p={4}>
+        <Stack spacing={4} as={Container} maxW={"3xl"} textAlign={"center"}>
+          <Heading fontSize={{ base: "2xl", sm: "4xl" }} fontWeight={"bold"}>
+            We work with
+          </Heading>
+        </Stack>
+
+        <Container maxW={"5xl"} mt={12}>
+          <Flex flexWrap="wrap" gridGap={6} justify="center">
+            {workWith.map((d, i) => (
+              <CompanyCard img={d.src} />
+            ))}
+          </Flex>
+        </Container>
+      </Box>
     </>
   );
 }
