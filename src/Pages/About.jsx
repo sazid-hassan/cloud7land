@@ -14,6 +14,7 @@ const About = () => {
         transforming digital content and services accessibility.
       </p>
     </div>
+    
   );
 };
 

@@ -24,8 +24,8 @@ const Services = () => {
   ];
 
   return (
-    <div className="about">
-      <h3>Service Sectors</h3>
+    <div className="about" m>
+      <h3 className="service-name" >Service Sectors</h3>
       <div className="service-card-holder">
         {serviceData.map((d, i) => (
           <ServiceCard key={i} data={d} />

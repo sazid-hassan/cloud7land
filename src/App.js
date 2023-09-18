@@ -6,7 +6,7 @@ import close from "./Img/close.svg";
 import holdingPhone from "./Img/holding-phone.jpg";
 import illustration from "./Img/illustration.svg";
 import person1 from "./Img/person-1.jfif";
-import menu from "./Img/menu.svg";
+import menu from "./Img/logo-c7.svg";
 import person2 from "./Img/person-2.jfif";
 import person3 from "./Img/person-3.jpg";
 import video from "./Img/video.svg";
@@ -30,41 +30,28 @@ function App() {
       {/* <!--NAVIGATION BLOG START--> */}
       <div class="nav-bar">
         <div class="container">
-          <a class="logo-nav" href="">
-            Remember<span>That</span>
+         
+          <a class="logo-nav" href="/"> <img src={menu} alt="logo" />
           </a>
-          <img
-            id="mobile-cta"
-            class="mobile-menu"
-            src={menu}
-            alt="navigation"
-          />
-          <nav>
-            <img
-              id="mobile-exit"
-              class="mobile-menu-exit"
-              src={close}
-              alt="close navigation"
-            />
-            <ul class="primary-nav">
-              <li class="current">
-                <a href="#">Home</a>
-              </li>
-              <li>
-                <a href="#">Features</a>
-              </li>
-              <li>
-                <a href="#">Pricing</a>
-              </li>
-            </ul>
 
+          <nav>
+
+    <ul class="first-nav">
+
+
+
+    </ul>
             <ul class="second-nav">
+              <li>
+                <a>About Us</a>
+              </li>
+              <li>
+                <a>Services</a>
+              </li>
               <li>
                 <a href="#">Contact</a>
               </li>
-              <li class="go-premium-cta">
-                <a href="#">Go Premium</a>
-              </li>
+              
             </ul>
           </nav>
         </div>
