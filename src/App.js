@@ -14,33 +14,18 @@ import About from "./Pages/About";
 import Services from "./Pages/Services";
 
 function App() {
-  // const mobileBtn = document.getElementById("mobile-cta");
-  // const nav = document.querySelector("nav");
-  // const mobileBtnExit = document.getElementById("mobile-exit");
-
-  // mobileBtn.addEventListener("click", () => {
-  //   nav.classList.add("menu-btn");
-  // });
-
-  // mobileBtnExit.addEventListener("click", () => {
-  //   nav.classList.remove("menu-btn");
-  // });
   return (
     <div className="App">
       {/* <!--NAVIGATION BLOG START--> */}
       <div class="nav-bar">
         <div class="container">
-         
-          <a class="logo-nav" href="/"> <img src={menu} alt="logo" />
+          <a class="logo-nav" href="/">
+            {" "}
+            <img src={menu} alt="logo" />
           </a>
 
           <nav>
-
-    <ul class="first-nav">
-
-
-
-    </ul>
+            <ul class="first-nav"></ul>
             <ul class="second-nav">
               <li>
                 <a>About Us</a>
@@ -51,7 +36,6 @@ function App() {
               <li>
                 <a href="#">Contact</a>
               </li>
-              
             </ul>
           </nav>
         </div>
