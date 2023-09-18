@@ -21,11 +21,27 @@ ul {
 }
 
 section {
-  padding: 5em 2em;
+  padding: 1em 2em;
 }
 
-img {
-  max-width: 100%;
+
+
+
+
+.container {
+  width: 90%;
+  margin: 0 auto;
+}
+
+/* welcome
+ */
+.card {
+  background: #fff;
+  padding: 1em;
+  margin-top: 1em;
+  border-radius: 0.5em;
+  -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
 }
 
 /* --- NAVIGATION STYLE ---*/
@@ -59,6 +75,19 @@ img {
 .nav-bar .mobile-menu {
   cursor: pointer;
 }
+
+/* --Background image--- */
+.bg-image {
+  background-image: url('Img/background.jpg');
+
+  /* background-size: cover; */
+  /* background-position: center; */
+  /* background-repeat: no-repeat; */
+  height: 30%;
+  width: 100%;
+  position: relative;
+}
+
 
 /* --- HERO STYLE ---*/
 .hero {
@@ -173,6 +202,9 @@ img {
 /* --- CONTACT STYLE ---*/
 h2 {
   font-size: 2em;
+  letter-spacing: 4px;
+    color: rgb(85, 85, 193);
+    text-transform: uppercase
 }
 
 label {
@@ -341,6 +373,7 @@ nav li a:hover {
     display: -ms-flexbox;
     display: flex;
   }
+  
   .primery-cta {
     margin-right: 1em;
   }

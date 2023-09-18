@@ -13,6 +13,8 @@ import video from "./Img/video.svg";
 import About from "./Pages/About";
 import Services from "./Pages/Services";
 import background from "./Img/background.jpg";
+import WorkWith from "./Pages/WorkWith";
+import { Button } from "@chakra-ui/button";
 
 function App() {
   return (
@@ -68,16 +70,37 @@ function App() {
 
       {/* <!--SECTION FEATURES BLOG START--> */}
 
-      <section className="">
-        <div className="container" style={{
-          marginTop: "2px"
-        }}>
-          <img src={background} alt="" />
+      <section class="bg-image">
+        <div class="container">
+          <div class="left-col">
+
+           {/* welcome design
+            */}
+            <h2>welcome</h2>
+           
+            <h1>You've entered
+              <span href="#" style={{
+                color: "blue",
+              }}> Cloud 7</span>
+
+            </h1>
+            <div class="hero-cta">
+              <a href="#" class="">
+                <h3>
+
+                  “Unlocking the future of payments”</h3>
+              </a>
+            </div>
           </div>
-          </section>
+
+
+        </div>
+      </section>
+
 
       <About />
       <Services />
+      <WorkWith />
 
       <section class="features-section">
         <div class="container">
