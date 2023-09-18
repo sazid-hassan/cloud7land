@@ -15,6 +15,8 @@ import Services from "./Pages/Services";
 import background from "./Img/background.jpg";
 import WorkWith from "./Pages/WorkWith";
 import { Button } from "@chakra-ui/button";
+import ContactForm from "./Components/ContactForm";
+import { Box } from "@chakra-ui/layout";
 
 function App() {
   return (
@@ -160,32 +162,67 @@ function App() {
         <div class="container">
           <div class="contact-left">
             <h2>Contact</h2>
-            <form action="#" method="post">
-              <label for="name">Name</label>
-              <input type="text" id="name" name="name" />
-              <label for="message">Message</label>
-              <textarea
-                name="message"
-                id="message"
-                cols="30"
-                rows="10"
-              ></textarea>
-
-              <input type="submit" value="send message" class="send-message" />
-            </form>
+            <ContactForm/>
           </div>
-
           <div class="contact-left">
-            <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31465.03369795242!2d80.01091702588964!3d9.669999413076031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe53fd7be66aa5%3A0xc7da0d9203baf512!2sJaffna!5e0!3m2!1sen!2slk!4v1631203020561!5m2!1sen!2slk"
-              width="600"
-              height="450"
+            <Box
+              borderWidth='1px'
+              borderRadius='lg'
+              p='6' bg='white'
+              boxShadow='lg'
+            >
+              <div>
+
+              
+              <iframe
+             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3651.8498589542687!2d90.3783899748722!3d23.752732888687653!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3755b8ae4144ca89%3A0x1a5e6bffc7992f2!2sUnion%20Heights!5e0!3m2!1sen!2sbd!4v1695034884353!5m2!1sen!2sbd" 
+              width="650px"
               // style="border:0"
               allowfullscreen=""
               loading="lazy"
               title="Lazy"
             ></iframe>
+            </div>
+            <div>
+            <h2>Address</h2>
+            <p>
+              <strong>Phone:</strong> (+880) 1711325111
+              <br />
+              <strong>Email:</strong>
+              <a href="mailto: " target="_blank" rel="noopener noreferrer">
+                {"cloud7@gmail.com "}
+              </a>
+
+            </p>
+
+            
+            <p>
+              Cloud 7 Limited
+              <br />
+              Union Heights(Level-5),Panthapath,Dhaka
+            </p>
+              
+            </div>
+            
+
+            
+            </Box>
           </div>
+
+              
+            
+
+          {/* <div class="contact-left">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31465.03369795242!2d80.01091702588964!3d9.669999413076031!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3afe53fd7be66aa5%3A0xc7da0d9203baf512!2sJaffna!5e0!3m2!1sen!2slk!4v1631203020561!5m2!1sen!2slk"
+              width="650"
+              height="auto"
+              // style="border:0"
+              allowfullscreen=""
+              loading="lazy"
+              title="Lazy"
+            ></iframe>
+          </div> */}
         </div>
       </section>
 
