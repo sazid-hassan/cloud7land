@@ -7,6 +7,7 @@ import {
   Flex,
   Heading,
   Icon,
+  IconButton,
   Stack,
   Text,
   useColorModeValue,
@@ -90,23 +91,27 @@ export default function WorkWith() {
           GLOBAL PARTNERS
         </Heading>
       </Stack>
-      {globalPartners.map((d, i) => (
-        <img src={d.src} key={i} height={40} width={100} />
-      ))}
+      
       {workWith.map((d, i) => (
         <img src={d.src} key={i} height={40} width={100} />
       ))}
 
       <Container maxW={"5xl"} mt={12}>
         <Flex flexWrap="wrap" gridGap={6} justify="center">
-          <Card
+          {globalPartners.map((d, i) => (
+            // <img src={d.src} key={i} height={40} width={100} />
+            <Card
             heading={"Heading"}
-            icon={<Icon as={FcAssistant} w={10} h={10} />}
+      
+            // icon={<Icon src={d.src} w={10} h={10} key={i} />}
             description={
               "Lorem ipsum dolor sit amet catetur, adipisicing elit."
             }
             href={"#"}
           />
+          ))}
+         
+
           <Card
             heading={"Heading"}
             icon={<Icon as={FcCollaboration} w={10} h={10} />}
