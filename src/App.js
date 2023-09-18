@@ -22,16 +22,16 @@ function App() {
   return (
     <div className="App">
       {/* <!--NAVIGATION BLOG START--> */}
-      <div class="nav-bar">
-        <div class="container">
-          <a class="logo-nav" href="/">
+      <div className="nav-bar">
+        <div className="container">
+          <a className="logo-nav" href="/">
             {" "}
             <img src={menu} alt="logo" />
           </a>
 
           <nav>
-            <ul class="first-nav"></ul>
-            <ul class="second-nav">
+            <ul className="first-nav"></ul>
+            <ul className="second-nav">
               <li>
                 <a>About Us</a>
               </li>
@@ -48,64 +48,64 @@ function App() {
       {/* <!--NAVIGATION BLOG END--> */}
 
       {/* <!--SECTION HERO BLOG START--> */}
-      {/* <section class="hero">
-        <div class="container">
-          <div class="left-col">
-            <p class="sub-head">it's nitty &amp; gritty</p>
+      {/* <section className="hero">
+        <div className="container">
+          <div className="left-col">
+            <p className="sub-head">it's nitty &amp; gritty</p>
             <h1>a task app that doesn't stink</h1>
 
-            <div class="hero-cta">
-              <a href="#" class="primery-cta">
+            <div className="hero-cta">
+              <a href="#" className="primery-cta">
                 Try for free
               </a>
-              <a href="#" class="watch-video-cta">
+              <a href="#" className="watch-video-cta">
                 <img src={video} alt="Video Clip" />
                 Watch a video
               </a>
             </div>
           </div>
 
-          <img src={illustration} alt="Illustration" class="hero-img" />
+          <img src={illustration} alt="Illustration" className="hero-img" />
         </div>
       </section> */}
       {/* <!--SECTION HERO BLOG END--> */}
 
       {/* <!--SECTION FEATURES BLOG START--> */}
 
-      <section class="bg-image">
-        <div class="container">
-          <div class="left-col">
-
-           {/* welcome design
-            */}
+      <section className="bg-image">
+        <div className="container">
+          <div className="left-col">
+            {/* welcome design
+             */}
             <h2>welcome</h2>
-           
-            <h1>You've entered
-              <span href="#" style={{
-                color: "blue",
-              }}> Cloud 7</span>
 
+            <h1>
+              You've entered
+              <span
+                href="#"
+                style={{
+                  color: "blue",
+                }}
+              >
+                {" "}
+                Cloud 7
+              </span>
             </h1>
-            <div class="hero-cta">
-              <a href="#" class="">
-                <h3>
-
-                  “Unlocking the future of payments”</h3>
+            <div className="hero-cta">
+              <a href="#" className="">
+                <h3>“Unlocking the future of payments”</h3>
               </a>
             </div>
           </div>
-
-
         </div>
       </section>
-
 
       <About />
       <Services />
       <WorkWith />
 
-      <section class="features-section">
-        <div class="container">
+      <section className="features-section">
+        <div className="container">
           <ul>
             <li>unlimited tasks</li>
             <li>confetti Explosions upon task completions</li>
@@ -120,8 +120,8 @@ function App() {
       {/* <!--SECTION FEATURES BLOG END--> */}
 
       {/* <!--SECTION TEST  BLOG START--> */}
-      <section class="test-monials-section">
-        <div class="container">
+      <section className="test-monials-section">
+        <div className="container">
           <ul>
             {/* <!--PERSON 1--> */}
             <li>
@@ -158,13 +158,30 @@ function App() {
       {/* <!--SECTION TEST  BLOG END--> */}
 
       {/* <!--SECTION CONTACT  BLOG START--> */}
-      <section class="contact-section">
-        <div class="container">
-          <div class="contact-left">
+      <section className="contact-section">
+        <div className="container">
+          <div className="contact-left">
             <h2>Contact</h2>
             <ContactForm/>
+            <form action="#" method="post">
+              <label for="name">Name</label>
+              <input type="text" id="name" name="name" />
+              <label for="message">Message</label>
+              <textarea
+                name="message"
+                id="message"
+                cols="30"
+                rows="10"
+              ></textarea>
+
+              <input
+                type="submit"
+                value="send message"
+                className="send-message"
+              />
+            </form>
           </div>
-          <div class="contact-left">
+          <div className="contact-left">
             <Box
               borderWidth='1px'
               borderRadius='lg'
